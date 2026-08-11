@@ -5,6 +5,8 @@
 
 **Soix Notes** is a privacy-focused, local-first note workspace with encryption at rest, rich editing, tasks and calendar workflows, reminders, and optional cloud sync (OneDrive / WebDAV).
 
+Website: <https://notes.soix.app>
+
 ---
 
 ## About This Repository
@@ -15,63 +17,73 @@
 |-------------------------|-----------------------------|
 | [Issues](https://github.com/soix-app/soix-notes/issues) — bug reports and feature requests | Application source code |
 | [Discussions](https://github.com/soix-app/soix-notes/discussions) — questions, ideas, and general conversation | Build instructions or developer documentation |
-| A public channel to reach the team | Access to private development repositories |
+| A direct channel to the developer | Access to private development repositories |
 
-Soix Notes is a **closed-source product**. The app itself is not distributed from this repository, and **pull requests are not accepted**.
+Soix Notes is a **closed-source product**. The app is not distributed from this repository, and **pull requests are not accepted**.
 
 ---
 
 ## How to Give Feedback
 
-### Report a Bug (use Issues)
+### Report a bug (Issues)
 
-Please search existing issues before opening a new one. When filing a bug report, include:
+Please search existing issues before opening a new one. When filing a report, include:
 
-- **Environment**: OS and version (e.g. Windows 11, macOS 14, Android 14)
-- **App version**: from the in-app settings
-- **Steps to reproduce**: a clear, repeatable path
-- **Expected behavior** and **actual behavior**
-- **Screenshots or screen recordings** (if applicable)
-- **Logs or error messages** (if applicable — do not include passwords, keys, or vault secrets)
+- **Operating system and version**
+- **App version** — shown in the app's About dialog
+- **Steps to reproduce** — a clear, repeatable path
+- **What you expected** and **what actually happened**
+- **Screenshots or a short recording**, if the problem is visual
+- **Error messages**, if any — but never passwords, keys, or vault contents
 
-### Request a Feature (use Issues)
+### Request a feature (Issues)
 
-Use the `enhancement` label if available, and describe:
+Describe the problem you are trying to solve, not only the solution you have in mind. There is often a simpler way to get you there, and it only becomes visible once the underlying problem is clear.
 
-- The problem you are trying to solve
-- How you would like the feature to work
-- Why it matters to you (optional)
+### Ask a question or float an idea (Discussions)
 
-### Ask Questions or Discuss Ideas (use Discussions)
+- **Q&A** — how do I do X, why does Y behave this way
+- **Ideas** — half-formed thoughts worth talking through before they become a request
+- **Announcements** — releases and news, posted by me
 
-Discussions are a good fit for:
+Rule of thumb: Issues are for things with a clear "done" state, Discussions are for everything open-ended. If you pick the wrong one, I will move it.
 
-- Usage tips and workflows
-- General questions that are not a clear bug report
-- Product ideas and open-ended conversation
+---
+
+## What to Expect
+
+Soix Notes is built by one person, in evenings and on weekends.
+
+- I read everything posted here.
+- Bug reports get a first reply **within 48 hours** — sometimes only "I can reproduce it, looking into it", but you will not be left wondering whether anyone saw it.
+- I cannot promise a fix date, and not every feature request will be built. Requests are labelled and reviewed in batches.
 
 ---
 
 ## Guidelines
 
-- Feedback may be written in **English or Chinese**.
-- **Do not** post passwords, vault keys, recovery material, or private note content.
-- Please keep topics relevant to **Soix Notes**.
-- We read feedback regularly, but we cannot guarantee a reply or a timeline for every request.
+- **Write in any language you like.** Machine translation handles this well enough, and a rough report in your own language is far more useful than a vague one in English. Language should never be the reason a problem goes unreported.
+- **Never post** passwords, vault keys, recovery material, or private note content.
+- Please keep topics relevant to Soix Notes.
 
 ---
 
 ## Privacy & Security
 
-If your report involves encryption, sync, or import/export, share only the **minimum information needed to reproduce the issue**. Do not upload real vault files or full note archives unless explicitly requested by the team.
+If your report involves encryption, sync, or import and export, share only the minimum needed to reproduce the problem. Do not upload real vault files or full note archives unless I explicitly ask for them.
+
+If you have found something security-sensitive, email **support@soix.app** rather than opening a public issue.
 
 ---
 
-## License & Notice
+## Not on GitHub?
 
-- Documentation and community posts in this repository are provided as-is by their respective authors.
-- **The Soix Notes application is closed-source** and remains the property of its owners. This repository does not grant any open-source license or access to application source code.
+Email **support@soix.app**. It reaches the same person.
 
 ---
 
-Thank you for using Soix Notes — and for helping us improve it.
+## Notice
+
+The Soix Notes application is closed source and remains the property of its developer. Nothing in this repository grants any license to the application or its source code. Posts and documentation here are provided as-is by their respective authors.
+
+Thank you for using Soix Notes, and for helping make it better.
