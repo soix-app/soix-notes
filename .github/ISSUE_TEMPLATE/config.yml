@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question about using the app
+    url: https://github.com/soix-app/soix-notes/discussions/categories/q-a
+    about: Ask in Q&A — answers get marked as accepted so others can find them.
+  - name: Idea you want to talk through first
+    url: https://github.com/soix-app/soix-notes/discussions/categories/ideas
+    about: Post in Ideas if it is not yet a concrete request.
+  - name: Security-sensitive report
+    url: mailto:support@soix.app
+    about: Email instead of opening a public issue.
+  - name: Not on GitHub, or prefer email
+    url: mailto:support@soix.app
+    about: support@soix.app reaches the same person.
