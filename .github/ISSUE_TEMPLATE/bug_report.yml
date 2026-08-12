@@ -1,8 +1,3 @@
-下面四个文件放到仓库的 .github/ISSUE_TEMPLATE/ 目录里。版本号占位我按 MSIX 配置的 1.0.0.0 写的，如果 About 对话框里显示的是 1.0.0，把示例值改一下就行 —— 示例格式和用户实际看到的一致，能少收到一堆填错格式的。
-
-先做一件事：GitHub 默认标签里只有 bug、enhancement、question，所以下面我只用了这三个。如果你想让同步问题能单独筛出来，先在 Issues → Labels 建一个 sync 标签，然后把 sync_problem.yml 的 labels 改成 ["bug", "sync"]。没建就先保持原样，否则表单会静默忽略不存在的标签。
-
-.github/ISSUE_TEMPLATE/bug_report.yml
 name: Bug report
 description: Something in the app is broken or behaves unexpectedly
 labels: ["bug"]
@@ -12,10 +7,13 @@ body:
       value: |
         Thanks for reporting this. A few details up front save us both a round of
         back-and-forth.
+
         **Write in whatever language you're comfortable with** — I read English and
         Chinese directly and translate the rest.
+
         **Never include** passwords, vault keys, recovery codes, or private note
         content in this form.
+
   - type: checkboxes
     id: preflight
     attributes:
@@ -25,6 +23,7 @@ body:
           required: true
         - label: This is not a sync or cloud problem (those have their own template)
           required: false
+
   - type: input
     id: app_version
     attributes:
@@ -33,6 +32,7 @@ body:
       placeholder: 1.0.0.0
     validations:
       required: true
+
   - type: input
     id: os
     attributes:
@@ -40,6 +40,7 @@ body:
       placeholder: Windows 11 24H2
     validations:
       required: true
+
   - type: textarea
     id: what_happened
     attributes:
@@ -47,12 +48,14 @@ body:
       description: Describe the problem as you experienced it.
     validations:
       required: true
+
   - type: textarea
     id: expected
     attributes:
       label: What you expected instead
     validations:
       required: true
+
   - type: textarea
     id: steps
     attributes:
@@ -67,6 +70,7 @@ body:
         3. The note ...
     validations:
       required: false
+
   - type: dropdown
     id: frequency
     attributes:
@@ -78,6 +82,7 @@ body:
         - Not sure yet
     validations:
       required: true
+
   - type: textarea
     id: errors
     attributes:
@@ -86,6 +91,7 @@ body:
       render: text
     validations:
       required: false
+
   - type: textarea
     id: extra
     attributes:
@@ -95,6 +101,7 @@ body:
         you can drag files into this box.
     validations:
       required: false
+
   - type: checkboxes
     id: safety
     attributes:
