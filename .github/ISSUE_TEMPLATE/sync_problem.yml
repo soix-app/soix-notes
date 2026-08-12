@@ -1,0 +1,144 @@
+name: Sync problem
+description: Cloud sync fails, stalls, or two devices disagree
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Sync problems depend heavily on your setup, so this form asks for more
+        detail than a normal bug report. It is worth it — with these fields filled
+        in I can usually start investigating immediately instead of asking
+        questions for a week.
+
+        **Do not upload real vault files or note archives**, and never post
+        passwords, vault keys, or recovery codes. If your report is
+        security-sensitive, email **support@soix.app** instead of opening a public
+        issue.
+
+  - type: dropdown
+    id: problem_type
+    attributes:
+      label: What kind of problem is it
+      options:
+        - Cannot connect or authorize the cloud account
+        - Sync starts but never finishes
+        - The two devices show different content
+        - Notes are missing, or an older version overwrote a newer one
+        - An error message appears
+        - Something else
+    validations:
+      required: true
+
+  - type: dropdown
+    id: sync_backend
+    attributes:
+      label: Sync backend
+      options:
+        - OneDrive
+        - WebDAV
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: webdav_server
+    attributes:
+      label: WebDAV server software and version
+      description: Only if you selected WebDAV above. This is often the deciding detail.
+      placeholder: Nextcloud 29 / Synology DSM 7.2 / Nutstore / other
+    validations:
+      required: false
+
+  - type: dropdown
+    id: encryption
+    attributes:
+      label: Is vault encryption enabled
+      options:
+        - "Yes"
+        - "No"
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: device_a
+    attributes:
+      label: Device A — OS and app version
+      placeholder: Windows 11 24H2, app 1.0.0.0
+    validations:
+      required: true
+
+  - type: input
+    id: device_b
+    attributes:
+      label: Device B — OS and app version
+      description: Leave blank if only one device is involved.
+      placeholder: Windows 10 22H2, app 1.0.0.0
+    validations:
+      required: false
+
+  - type: textarea
+    id: timeline
+    attributes:
+      label: Timeline
+      description: >
+        This is the most useful field for conflicts and missing notes. What did you
+        do on which device, and what did you see afterwards on the other one?
+        Approximate times are fine.
+      placeholder: |
+        - Tue evening, laptop: edited "Trip plan", closed the app
+        - Wed morning, desktop: "Trip plan" still shows the old text
+        - Wed 10:00, laptop: reopened the app, my edit is gone too
+    validations:
+      required: true
+
+  - type: dropdown
+    id: note_count
+    attributes:
+      label: Roughly how many notes are in the vault
+      description: First-time sync of a large vault behaves differently from a small one.
+      options:
+        - Under 100
+        - 100 to 1000
+        - Over 1000
+        - Not sure
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: context_flags
+    attributes:
+      label: Does any of this apply
+      options:
+        - label: This happened shortly after importing notes from another app
+          required: false
+        - label: This was the first sync after setting up the vault
+          required: false
+        - label: The cloud account may be low on storage space
+          required: false
+        - label: I am on a company network, VPN, or behind a proxy
+          required: false
+
+  - type: textarea
+    id: errors
+    attributes:
+      label: Error messages
+      description: Paste the exact text shown by the app. Remove anything sensitive first.
+      render: text
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have not included vault files, note content, passwords, keys, or recovery codes
+          required: true
