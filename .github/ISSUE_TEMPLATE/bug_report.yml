@@ -1,5 +1,5 @@
 name: Bug report
-description: Something in the app is broken or behaves unexpectedly
+description: Something in the app is broken, including cloud sync problems
 labels: ["bug"]
 body:
   - type: markdown
@@ -12,7 +12,8 @@ body:
         Chinese directly and translate the rest.
 
         **Never include** passwords, vault keys, recovery codes, or private note
-        content in this form.
+        content in this form. If your report is security-sensitive, email
+        **support@soix.app** instead of opening a public issue.
 
   - type: checkboxes
     id: preflight
@@ -21,14 +22,12 @@ body:
       options:
         - label: I searched existing issues and this does not look like a duplicate
           required: true
-        - label: This is not a sync or cloud problem (those have their own template)
-          required: false
 
   - type: input
     id: app_version
     attributes:
       label: App version
-      description: Shown in the app's About dialog
+      description: Shown in the app's About dialog. Filled in automatically if you opened this from the app.
       placeholder: 1.0.0.0
     validations:
       required: true
@@ -53,8 +52,9 @@ body:
     id: expected
     attributes:
       label: What you expected instead
+      description: Skip this if it is already obvious from the description above.
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: steps
@@ -83,6 +83,39 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: sync_backend
+    attributes:
+      label: Cloud sync
+      description: Which backend this vault uses, even if the problem seems unrelated to sync.
+      options:
+        - Not using sync
+        - OneDrive
+        - WebDAV
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: sync_details
+    attributes:
+      label: If this is a sync problem
+      description: >
+        Sync issues depend heavily on your setup. Three things make the
+        difference between me investigating immediately and asking questions for
+        a week: which WebDAV server software and version you use, the OS and app
+        version of the *other* device, and a rough timeline of what you did
+        where. Approximate times are fine.
+      placeholder: |
+        WebDAV server: Nextcloud 29 (or Synology DSM 7.2, Nutstore, ...)
+        Other device: Windows 10 22H2, app 1.0.0.0
+
+        - Tue evening, laptop: edited "Trip plan", closed the app
+        - Wed morning, desktop: "Trip plan" still shows the old text
+        - Wed 10:00, laptop: reopened the app, my edit is gone too
+    validations:
+      required: false
+
   - type: textarea
     id: errors
     attributes:
@@ -99,6 +132,15 @@ body:
       description: >
         Screenshots or a short screen recording help a lot for visual problems —
         you can drag files into this box.
+    validations:
+      required: false
+
+  - type: input
+    id: language
+    attributes:
+      label: App language
+      description: Filled in automatically if you opened this from the app.
+      placeholder: en
     validations:
       required: false
 
