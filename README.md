@@ -3,7 +3,11 @@
 [![Issues](https://img.shields.io/github/issues/soix-app/soix-notes)](https://github.com/soix-app/soix-notes/issues)
 [![Discussions](https://img.shields.io/github/discussions/soix-app/soix-notes)](https://github.com/soix-app/soix-notes/discussions)
 
-**Soix Notes** is a privacy-focused, local-first note workspace with encryption at rest, rich editing, tasks and calendar workflows, reminders, and optional cloud sync (OneDrive / WebDAV).
+**Soix Notes** is a notes, tasks and calendar workspace built on a single idea: your notes are yours alone — encrypted before they leave your device.
+
+There is no Soix account to create and no Soix server. If you want your notes on more than one device, sync runs through a cloud you already own (OneDrive or WebDAV), and it stays off until you turn it on. Your notes are ordinary files on your own device, which is what makes them yours and why the app keeps working with no internet connection.
+
+One thing worth stating plainly, since this is a closed-source product making a privacy claim: encryption protects the contents of your notes, not the fact that they exist. With sync on, your cloud provider can still see how many notes you have, the approximate size of each file, when each was last modified, and that a folder structure exists (folder and file names are encrypted). This is inherent to any file-based end-to-end encrypted sync. Keeping your vault local only avoids it entirely. The [privacy policy](https://notes.soix.app/privacy) covers this in full.
 
 Website: <https://notes.soix.app>
 
