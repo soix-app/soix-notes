@@ -83,16 +83,15 @@ body:
     validations:
       required: true
 
-  - type: dropdown
+  - type: input
     id: sync_backend
     attributes:
       label: Cloud sync
-      description: Which backend this vault uses, even if the problem seems unrelated to sync.
-      options:
-        - Not using sync
-        - OneDrive
-        - WebDAV
-        - Not sure
+      description: >
+        Which backend this vault uses, even if the problem seems unrelated to
+        sync. Filled in automatically if you opened this from the app.
+        Otherwise: OneDrive, WebDAV, none, or leave it if you are not sure.
+      placeholder: OneDrive
     validations:
       required: true
 
