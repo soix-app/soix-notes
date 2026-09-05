@@ -89,8 +89,8 @@ body:
       label: Cloud sync
       description: >
         Which backend this vault uses, even if the problem seems unrelated to
-        sync. Filled in automatically if you opened this from the app.
-        Otherwise: OneDrive, WebDAV, none, or leave it if you are not sure.
+        sync. Filled in automatically if you opened this from the app. Otherwise
+        type OneDrive, WebDAV, Not using sync — or Not sure.
       placeholder: OneDrive
     validations:
       required: true
