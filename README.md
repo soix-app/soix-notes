@@ -7,7 +7,9 @@
 
 There is no Soix account to create and no Soix server. If you want your notes on more than one device, sync runs through a cloud you already own (OneDrive or WebDAV), and it stays off until you turn it on. Your notes are ordinary files on your own device, which is what makes them yours and why the app keeps working with no internet connection.
 
-One thing worth stating plainly, since this is a closed-source product making a privacy claim: encryption protects the contents of your notes, not the fact that they exist. With sync on, your cloud provider can still see how many notes you have, the approximate size of each file, when each was last modified, and that a folder structure exists (folder and file names are encrypted). This is inherent to any file-based end-to-end encrypted sync. Keeping your vault local only avoids it entirely. The [privacy policy](https://notes.soix.app/privacy) covers this in full.
+**Get it:** [Microsoft Store](https://apps.microsoft.com/detail/9NHLWDQQ9403?cid=github) · Windows 10 or later (64-bit)
+
+One thing worth stating plainly, since this is a closed-source product making a privacy claim: encryption protects the contents of your notes, not the fact that they exist. With sync on, your cloud provider can still see how many notes you have, the approximate size of each file, when each was last modified, which note changed on which day, and that a folder structure exists — names do not reveal titles, since each note is a folder named by a random identifier. This is inherent to any file-based end-to-end encrypted sync. Keeping your vault local only avoids it entirely. The [privacy policy](https://notes.soix.app/privacy) covers this in full.
 
 Website: <https://notes.soix.app>
 
