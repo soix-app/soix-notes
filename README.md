@@ -9,7 +9,7 @@ There is no Soix account to create and no Soix server. If you want your notes on
 
 **Get it:** [Microsoft Store](https://apps.microsoft.com/detail/9NHLWDQQ9403?cid=github) · Windows 10 or later (64-bit)
 
-One thing worth stating plainly, since this is a closed-source product making a privacy claim: encryption protects the contents of your notes, not the fact that they exist. With sync on, your cloud provider can still see how many notes you have, the approximate size of each file, when each was last modified, which note changed on which day, and that a folder structure exists — names do not reveal titles, since each note is a folder named by a random identifier. This is inherent to any file-based end-to-end encrypted sync. Keeping your vault local only avoids it entirely. The [privacy policy](https://notes.soix.app/privacy) covers this in full.
+One thing worth stating plainly, since this is a closed-source product making a privacy claim: encryption protects the contents of your notes, not the fact that they exist. With sync on, your cloud provider can still see how many notes you have, the approximate size of each file, when each was last modified, which note changed on which day, and that a folder structure exists — names do not reveal titles, since each note is a folder named by a random identifier. This is inherent to any file-based end-to-end encrypted sync. Keeping your vault local only avoids it entirely. The [privacy policy](https://notes.soix.app/privacy) covers this in full, and the [security design and threat model](https://notes.soix.app/security) goes further: encryption parameters, what an attacker in each position can learn, two claims you can falsify yourself with a network monitor, and the parts of a closed-source privacy claim you simply have to take on trust.
 
 Website: <https://notes.soix.app>
 
@@ -79,6 +79,8 @@ Soix Notes is built by one person, in evenings and on weekends.
 If your report involves encryption, sync, or import and export, share only the minimum needed to reproduce the problem. Do not upload real vault files or full note archives unless I explicitly ask for them.
 
 If you have found something security-sensitive, email **support@soix.app** rather than opening a public issue.
+
+For how the encryption is built and what it does and does not protect, see the [security design and threat model](https://notes.soix.app/security).
 
 ---
 
